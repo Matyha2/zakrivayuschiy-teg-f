@@ -1,12 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root{
-  --font-primary: 'Inter', sans-serif;    
-  --font-secondary: 'Press Start 2P', sans-serif;
-  --background-color:#fff;
-  --primary-color:#000;
-  --element-border:#fff;
-  --background-image:url(../images/background.png);
-  --block-width:clamp(300px, 100%, 700px);
+:root {
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Press Start 2P", sans-serif;
+  --background-color: #fff;
+  --primary-color: #000;
+  --element-border: #fff;
+  --background-image: url(../images/background.png);
+  --block-width: clamp(300px, 100%, 700px);
   --contour-color: #000;
   --fill-color: #f00;
   --animation-fill-color: #f00;
