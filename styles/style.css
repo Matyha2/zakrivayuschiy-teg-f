@@ -106,11 +106,12 @@
   opacity: 0.5;
 }
 
-@supports ((-webkit-text-stroke: 2px var(--element-border)) or (text-stroke: 2px var(--element-border))) {
+@supports (-webkit-text-stroke: 1px var(--element-border)) {
   .main__card-text-element {
-    -webkit-text-stroke: 2px var(--element-border);
-    text-stroke: 2px var(--element-border);
-    text-shadow: none;
+    -webkit-text-stroke: 0.5px var(--element-border);
+    text-shadow: 
+      0 0 1px var(--element-border),
+      0 0 2px var(--element-border);
   }
 }
 
