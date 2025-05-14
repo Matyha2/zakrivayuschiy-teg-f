@@ -9,12 +9,11 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-primary);
-  font-variation-settings: 400;
+  font-variation-settings: 'wght' 400; /* Указываем ось 'wght' и значение 400 */
   background-image: var(--background-image);
   background: repeating-linear-gradient(90deg,
       #d3d3d3,
