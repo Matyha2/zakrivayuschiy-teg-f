@@ -106,6 +106,13 @@
   opacity: 0.5;
 }
 
+@supports ((-webkit-text-stroke: 2px var(--element-border)) or (text-stroke: 2px var(--element-border))) {
+  .main__card-text-element {
+    -webkit-text-stroke: 2px var(--element-border);
+    text-stroke: 2px var(--element-border);
+    text-shadow: none;
+ 
+
 .card__like-button {
   padding: 11px 37px;
   background-color: var(--background-color);
@@ -355,3 +362,4 @@ dialog::backdrop {
     place-items: center;
   }
 }
+
