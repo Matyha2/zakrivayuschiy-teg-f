@@ -5,7 +5,6 @@
   --background-color: #fff;
   --primary-color: #000;
   --element-border: #fff;
-  --background-image: url(../images/background.png);
   --block-width: clamp(300px, 100%, 700px);
   --contour-color: #000;
   --fill-color: #f00;
