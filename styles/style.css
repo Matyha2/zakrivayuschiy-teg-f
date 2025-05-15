@@ -32,7 +32,7 @@
 }
 
 .header {
-  font-family: "Press Start 2P";
+  font-family:var(--font-secondary);
   padding-block: clamp(120px,
       120px + (128 - 120) * (100vw - 375px) / (1440 - 375),
       128px);
@@ -80,6 +80,7 @@
   padding: 5px 10px;
   border-bottom: 2px solid var(--primary-color);
   font-size: 18px;
+  font-variation-settings: 'wght' 700;
 }
 
 .main__card__text-block {
@@ -108,10 +109,8 @@
 
 @supports (-webkit-text-stroke: 1px var(--element-border)) {
   .main__card-text-element {
-    -webkit-text-stroke: 0.5px var(--element-border);
-    text-shadow: 
-      0 0 1px var(--element-border),
-      0 0 2px var(--element-border);
+    -webkit-text-stroke: 0.6px var(--element-border);
+    text-shadow: none;
   }
 }
 
@@ -149,19 +148,17 @@
   gap: 6px;
   align-items: center;
 }
-
-.card__save-button:focus-visible,
-.close-button:focus-visible,
-.card__like-button:focus-visible {
+.button {
+  transition: box-shadow 0.3s ease; 
+}
+.button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--primary-color);
-  transition: box-shadow 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
   outline: none;
   border: 2px solid var(--primary-color);
-  transition: transform 0.3s ease;
 }
 
 .close-button {
@@ -194,7 +191,7 @@
 }
 
 dialog::backdrop {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .gray-filter {
@@ -265,6 +262,9 @@ dialog::backdrop {
   display: inline-block;
   position: relative;
 }
+.like-icon:hover {
+  cursor: pointer;
+}
 
 .like-icon .contour {
   fill: var(--contour-color);
@@ -305,6 +305,13 @@ dialog::backdrop {
 .like-icon:active .main-body {
   fill: var(--fill-color);
 }
+.like-icon:active .core {
+  transition-delay: 0s;
+}
+
+.like-icon:active .main-body {
+  transition-delay: 0.03s;
+}
 
 .like-icon.is-liked .core {
   fill: var(--fill-color);
@@ -321,41 +328,9 @@ dialog::backdrop {
   transition-delay: 0.06s;
 }
 
-.like-icon.is-liked {
-  animation: scale 0.3s 0.1s ease-in;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks 0.3s 0.3s ease-in;
-}
-
 .like-icon:not(.is-liked) .contour {
   fill: var(--contour-color);
   transition: fill 0.1s linear;
-}
-
-@keyframes scale {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.25);
-  }
-}
-
-@keyframes sparks {
-
-  0%,
-  100% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
 }
 
 @media (width <=375px) {
