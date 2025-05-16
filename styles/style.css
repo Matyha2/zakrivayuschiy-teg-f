@@ -72,7 +72,7 @@
 }
 
 .main__card {
-  margin-bottom: 48px;
+  margin-bottom: 50.4px;
   border: 2px solid var(--primary-color);
   font-size: 18px;
   background-color: var(--background-color);
@@ -123,7 +123,8 @@
 
 .card__like-button {
   border: 2px solid var(--primary-color);
-  padding: 11px 37px;
+  inline-size: 130px;
+  block-size: 38px;
   font-family: var(--font-secondary);
   font-size: 14px;
   background-color: var(--background-color);
@@ -139,7 +140,6 @@
 .main__card-button-container {
   display: flex;
   justify-self: end;
-  gap: 10px;
 }
 
 .card__save-button {
@@ -154,6 +154,7 @@
   font-family: var(--font-secondary);
   font-size: 14px;
   background-color: var(--background-color);
+  margin-bottom: 103px;
 }
 .button {
   transition: box-shadow 0.3s ease;
@@ -239,8 +240,10 @@ dialog::backdrop {
 }
 
 .button__inner .button__text {
+  color: var(--background-color);
   position: relative;
   z-index: 2;
+  mix-blend-mode: difference;
 }
 
 .button__inner::before {
@@ -261,7 +264,6 @@ dialog::backdrop {
 }
 
 .button__inner:hover .button__text {
-  color: white;
   transition: 0.5s;
 }
 
@@ -344,5 +346,7 @@ dialog::backdrop {
   .card__save-button {
     grid-template-columns: 1fr;
     place-items: center;
+    margin-bottom: 100px;
+    gap: 16px;
   }
 }
