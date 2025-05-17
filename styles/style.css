@@ -341,12 +341,23 @@ dialog::backdrop {
   fill: var(--contour-color);
   transition: fill 0.1s linear;
 }
-
+.floppy-icon{
+  width: 21px;
+  height: 21px;
+}
 @media (width <=375px) {
   .card__save-button {
     grid-template-columns: 1fr;
     place-items: center;
     margin-bottom: 100px;
-    gap: 16px;
+    gap: 8px;
   }
+  .main__card-text-element {
+  top: 23px;
+  right: 10px;
+  }
+  .floppy-icon{
+  width: 28px;
+  height: 28px;
+}
 }
