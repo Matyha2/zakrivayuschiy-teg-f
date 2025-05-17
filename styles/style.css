@@ -342,9 +342,14 @@ dialog::backdrop {
   transition: fill 0.1s linear;
 }
 .floppy-icon {
+  position: relative;
+  z-index: 2;
   width: 21px;
   height: 21px;
+  color: var(--background-color);
+  mix-blend-mode: difference;
 }
+
 @media (width <=375px) {
   .card__save-button {
     grid-template-columns: 1fr;
