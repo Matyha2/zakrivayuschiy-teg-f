@@ -123,11 +123,11 @@
 
 .card__like-button {
   border: 2px solid var(--primary-color);
-  inline-size: 130px;
-  block-size: 38px;
   font-family: var(--font-secondary);
   font-size: 14px;
   background-color: var(--background-color);
+  inline-size: 130px;
+  block-size: 38px;
 }
 
 .card__icon-button {
@@ -149,12 +149,12 @@
   justify-self: center;
   align-items: center;
   gap: 6px;
+  margin-bottom: 103px;
   border: 2px solid var(--primary-color);
   padding: 14px 19px;
   font-family: var(--font-secondary);
   font-size: 14px;
   background-color: var(--background-color);
-  margin-bottom: 103px;
 }
 .button {
   transition: box-shadow 0.3s ease;
@@ -240,9 +240,9 @@ dialog::backdrop {
 }
 
 .button__inner .button__text {
-  color: var(--background-color);
   position: relative;
   z-index: 2;
+  color: var(--background-color);
   mix-blend-mode: difference;
 }
 
@@ -341,7 +341,7 @@ dialog::backdrop {
   fill: var(--contour-color);
   transition: fill 0.1s linear;
 }
-.floppy-icon{
+.floppy-icon {
   width: 21px;
   height: 21px;
 }
@@ -349,15 +349,15 @@ dialog::backdrop {
   .card__save-button {
     grid-template-columns: 1fr;
     place-items: center;
-    margin-bottom: 100px;
     gap: 8px;
+    margin-bottom: 100px;
   }
   .main__card-text-element {
-  top: 23px;
-  right: 10px;
+    top: 23px;
+    right: 10px;
   }
-  .floppy-icon{
-  width: 28px;
-  height: 28px;
-}
+  .floppy-icon {
+    width: 28px;
+    height: 28px;
+  }
 }
